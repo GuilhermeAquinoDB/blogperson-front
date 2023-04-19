@@ -1,11 +1,16 @@
-import './App.css';
-import Home from './paginas/home/Home';
+import Home from './pages/home/Home'
+import Navbar from './components/statics/navbar/Navbar'
+import Footer from './components/statics/footer/Footer'
+import './App.css'
 
 function App() {
-
   return (
-    <Home />
+    <>
+      <Navbar />
+        <Home />
+      <Footer />
+    </>
   )
 }
 
-export default App;
+export default App
