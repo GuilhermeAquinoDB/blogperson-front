@@ -1,7 +1,18 @@
+.caixa {
+  background-color: #3F51B5;
+}
+
 .titulo {
-  color: rgb(33, 29, 29);
-  color: rgb(45, 39, 39);
-  text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.botao {
+  border-color: white !important;
+  background-color: #3F51B5;
+  color: white !important;
+}
+
+.postagens {
+  background-color: white;
 }
