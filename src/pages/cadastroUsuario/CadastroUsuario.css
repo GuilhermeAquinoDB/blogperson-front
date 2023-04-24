@@ -1,0 +1,15 @@
+.img2 {
+  background-repeat: no-repeat;
+  width: 10vh;
+  min-width: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.textos2 {
+  font-weight: bold !important;
+}
+
+.btnCancelar {
+  margin-right: 20px !important;
+}
