@@ -7,6 +7,8 @@ import Login from './pages/login/Login'
 import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario'
 import ListaTema from './components/temas/listaTema/ListaTema'
 import ListaPostagem from './components/postagem/listaPostagem/ListaPostagem'
+import CadastroTema from './components/temas/cadastroTema/CadastroTema'
+import DeletarTema from './components/temas/deletarTema/DeletarTema'
 
 function App() {
   return (
@@ -19,7 +21,10 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
             <Route path="/cadastro" element={<CadastroUsuario />} />
+            <Route path="/formularioTema" element={<CadastroTema />} />
             <Route path="/tema" element={<ListaTema />} />
+            <Route path="/formularioTema/:id" element={<CadastroTema />} />
+            <Route path="/deletarTema/:id" element={<DeletarTema />} />
             <Route path="/post" element={<ListaPostagem />} />
           </Routes>
         </div>
