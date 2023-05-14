@@ -13,10 +13,10 @@ function Footer() {
     state => state.tokens
   )
 
-  var footerComponenent
+  var footerComponent
 
   if (token != '') {
-    footerComponenent = (
+    footerComponent = (
       <Grid
         container
         direction="row"
@@ -97,7 +97,7 @@ function Footer() {
     )
   }
 
-  return <>{footerComponenent}</>
+  return <>{footerComponent}</>
 }
 
 export default Footer
