@@ -5,10 +5,18 @@ import FacebookIcon from '@material-ui/icons/Facebook'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import './Footer.css'
+import { useSelector } from 'react-redux'
+import { TokenState } from '../../../store/tokens/tokensReducer'
 
 function Footer() {
-  return (
-    <>
+  const token = useSelector<TokenState, TokenState['tokens']>(
+    state => state.tokens
+  )
+
+  var footerComponenent
+
+  if (token != '') {
+    footerComponenent = (
       <Grid
         container
         direction="row"
@@ -86,8 +94,10 @@ function Footer() {
           </Box>
         </Grid>
       </Grid>
-    </>
-  )
+    )
+  }
+
+  return <>{footerComponenent}</>
 }
 
 export default Footer
