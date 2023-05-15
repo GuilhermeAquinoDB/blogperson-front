@@ -13,10 +13,13 @@ import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostag
 import CadastroPostagem from './components/postagem/cadastroPostagem/CadastroPostagem'
 import { Provider } from 'react-redux'
 import store from './store/store'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
     <Provider store={store}>
+      <ToastContainer />
       <BrowserRouter>
         <Navbar />
         <div style={{ minHeight: '100vh' }}>
